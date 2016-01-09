@@ -1,0 +1,11 @@
+<p>What is your favorite fruit?</p>
+
+<form action="/" method="post">
+  <select name="fruit" id="fruit">
+    {% for fruit in fruits %}
+    <option value="{{ fruit }}">{{ fruit }}</option>
+    {% endfor %}
+  </select>
+
+  <input type="submit" value="Submit" />
+</form>
